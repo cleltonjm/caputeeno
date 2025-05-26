@@ -1,5 +1,6 @@
 "use client"
 
+import { useFilter } from "@/hooks/useFilter";
 import { CartControl } from "../CartControl";
 import { Input } from "../PrimaryInput";
 import { Logo, TagHeader } from "./styles";
@@ -11,10 +12,11 @@ const sairaStencil = Saira_Stencil_One({
 })
 
 export function Header() {
+    const { setSearch, search } = useFilter()
     return (
         <TagHeader>
             <Logo className={sairaStencil.className}>Caputeeno</Logo>
-            <Input />
+            <Input value={search} handleChange={setSearch} />
             <CartControl />
         </TagHeader>
     )
