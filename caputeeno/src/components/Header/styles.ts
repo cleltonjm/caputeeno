@@ -13,7 +13,7 @@ export const TagHeader = styled.header`
         gap: 24px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 968px) {
         padding: 20px 160px;
     }
 `;
@@ -21,10 +21,14 @@ export const TagHeader = styled.header`
 export const Logo = styled.a`
     color: var(--logo-color);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 150%;
 
     @media (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media (min-width: 968px) {
         font-size: 40px;
     }
 `;
