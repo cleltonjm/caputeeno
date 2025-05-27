@@ -2,13 +2,13 @@ import { CartIcon } from "@/assets/icons/cart-icon"
 import { useLocalStorage } from "@/hooks/useLocalStorage"
 import { CartCount, Container } from "./styles"
 
-export function CartControl() {
-    const { value } = useLocalStorage('cart-items')
+export function CartControl(){
+    const { value } = useLocalStorage('cart-items', [])
 
     return (
         <Container>
-            <CartIcon />
-            {Array.isArray(value) && value.length > 0 && <CartCount>{value.length}</CartCount>}
+            <CartIcon/>
+            {value.length > 0 && <CartCount>{value.length}</CartCount>}
         </Container>
     )
 }
