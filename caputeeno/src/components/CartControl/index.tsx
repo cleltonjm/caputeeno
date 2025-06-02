@@ -7,7 +7,7 @@ export function CartControl(){
 
     return (
         <Container>
-            <CartIcon/>
+            <CartIcon />
             {value.length > 0 && <CartCount>{value.length}</CartCount>}
         </Container>
     )
