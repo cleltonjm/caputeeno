@@ -38,16 +38,7 @@ export const Card = styled.div`
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        padding: 8px 0;
-
-        > div {
-            width: 228px;
-            height: 1px;
-            margin: 8px 0%;
-            padding: 0px;
-            background: var(--shapes);
-        }
+        padding: 8px 12px;
+        width: 100%;
     }
-
-    
 `;
